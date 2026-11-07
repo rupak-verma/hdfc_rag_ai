@@ -1,0 +1,8 @@
+sheet,rows,missing_answer,dup_question_exact,dup_question_normalised,dup_answer,unique_answers,answers_under_20_chars,median_answer_chars,max_answer_chars,mentions_figures_fees_limits,mentions_hdfc
+KnowledgeBase_Clean,1000,0,11,12,0,1000,0,148,202,198,5
+BankFAQ_Clean,750,0,0,740,740,10,0,101,115,0,0
+HDFC_FAQ_Clean,2240,1,2,37,80,2159,11,198,10541,527,632
+Cybersecurity_Clean,55,0,0,0,0,55,0,196,261,4,0
+Privacy_Security_Clean,60,0,30,30,31,29,0,92,160,0,0
+RAG_Candidates,8000,0,7940,7940,0,8000,0,174,248,7202,7005
+FAQ_Canonical,3238,1,16,45,70,3167,11,159,10541,723,631

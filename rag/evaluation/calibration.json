@@ -1,0 +1,10 @@
+{
+  "standin:spacy-en_core_web_md": {
+    "min_cosine": 0.88,
+    "min_coverage": 0.0,
+    "dev_answerable_pass_rate": 0.7,
+    "dev_absent_abstain_rate": 1.0,
+    "calibrated_on": "dev split",
+    "date": "2026-11-04"
+  }
+}

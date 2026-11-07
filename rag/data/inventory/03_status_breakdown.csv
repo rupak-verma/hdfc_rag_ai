@@ -1,0 +1,20 @@
+table,column,value,rows
+RAG_Candidates,source_file,HDFC_Custom_LLM_7000rows_Dataset_Suite-v2.xlsx,7000
+RAG_Candidates,source_file,banking_knowledge_base_1000.xlsx,1000
+RAG_Candidates,provenance,synthetic_unverified_hdfc_policy_text,7000
+RAG_Candidates,provenance,synthetic_or_unverified_source,1000
+RAG_Candidates,access_class,Restricted Internal,1750
+RAG_Candidates,access_class,Confidential,1750
+RAG_Candidates,access_class,Regulatory Public,1750
+RAG_Candidates,access_class,Public,1750
+RAG_Candidates,access_class,unknown,1000
+RAG_Candidates,verification_status,QUARANTINED_UNVERIFIED_INTERNAL_POLICY,7000
+RAG_Candidates,verification_status,REQUIRES_FACT_CHECK,1000
+RAG_Candidates,rag_eligible,NO,7000
+RAG_Candidates,rag_eligible,NO_UNTIL_VERIFIED,1000
+Suite_RAG_Quarantine,verification_status,QUARANTINED_UNVERIFIED_INTERNAL_POLICY,7000
+Suite_RAG_Quarantine,rag_eligible,NO,7000
+Suite_RAG_Quarantine,access_class,Restricted Internal,1750
+Suite_RAG_Quarantine,access_class,Confidential,1750
+Suite_RAG_Quarantine,access_class,Regulatory Public,1750
+Suite_RAG_Quarantine,access_class,Public,1750

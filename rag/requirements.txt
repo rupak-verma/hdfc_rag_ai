@@ -1,0 +1,9 @@
+# proposed additions to the shared requirements.txt (Person 1 owns the merged file)
+pandas>=2.0
+numpy>=1.26
+rank-bm25>=0.2.2
+psycopg[binary]>=3.1
+sentence-transformers>=3.0      # real embeddings (downloads the model on first use)
+openpyxl>=3.1                   # reading the workbook
+pytest>=8.0
+# test-only (not needed in production): spacy + en_core_web_md for the stand-in embedder

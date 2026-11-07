@@ -1,0 +1,34 @@
+sheet,rows,columns,exact_duplicate_rows,empty_cells,column_names
+README,11,2,0,0,topic; details
+Source_Inventory,9,5,0,0,file; input_rows; observed_character; proposed_use; provenance_and_limitations
+Quality_Report,9,5,0,0,source_file; input_rows; curated_or_preserved_rows; fixes_applied; remaining_issues
+FAQ_Canonical,3238,10,0,11,record_id; source_file; question; answer; category; language; provenance; review_status; quality_flags; training_eligibility
+Intent_Candidates,10024,10,0,0,record_id; query; intent; domain; language; source; split; provenance; review_status; duplicate_query_flag
+Bank77_Train_Clean,9978,3,0,0,id; text; category
+Bank77_Test_Holdout,3080,3,0,0,id; text; category
+Bank77_Leakage_Removed,25,4,0,0,id; text; category; quality_status
+Customer_Query_Clean,48,11,0,0,query_id; query; intent; category; channel; language; priority; resolved; created_date; provenance; review_status
+SFT_Candidates,3313,12,0,86,sft_record_id; record_id; instruction; target_response; category; language; source_file; provenance; review_status; quality_flags; training_eligibility; task_type
+Chat_Conversations,10,6,0,0,conversation_id; messages_json; scenario_type; language; provenance; review_status
+Chat_Turns,26,8,0,0,conversation_id; turn_number; role; content; scenario_type; language; provenance; review_status
+Risk_Routing,28,12,0,0,example_id; task_type; user_query; intent; risk_level; expected_action; escalation_required; reason; language; provenance; review_status; risk_taxonomy_status
+Security_Candidates,135,12,0,210,record_id; prompt; context; target_response; task_type; intent; risk_level; source; provenance; review_status; duplicate_prompt; quality_flags
+Evaluation_Cases,15,8,0,0,test_id; category; test_prompt; expected_system_behaviour; pass_criterion; severity; gate_status; provenance
+RAG_Candidates,8000,10,0,1000,doc_id; document_title; section; content; source_file; provenance; access_class; effective_date; verification_status; rag_eligible
+Suite_SFT_Quarantine,7000,9,0,0,Task ID; Domain; Instruction / Input Prompt; Authoritative Context Snippet; Target Model Response (JSON); Policy Flags; Escalation Req.; quality_status; reason
+Suite_RAG_Quarantine,7000,10,0,0,doc_id; document_title; section; content; source_file; provenance; access_class; effective_date; verification_status; rag_eligible
+Suite_Eval_Quarantine,7000,9,0,0,Test ID; Category; Test Scenario / Prompt; Expected System Behavior; Pass Criterion; Severity Weight; Gate Status; quality_status; reason
+Suite_Gov_Quarantine,7000,10,0,3500,Asset ID; Original Data Source; Classification; PII/SPII Detected; De-Identification Action; Scrubbed Status; SHA-256 Dataset Hash; Approved By; quality_status; reason
+Suite_Taxonomy_Review,7000,9,0,2800,Intent ID; Domain; Customer Query; Normalized Intent Label; Risk Level; Allowed Automation; Escalation Target; quality_status; reason
+Duplicate_Audit,5730,4,4904,0,source; record; label_or_answer; issue
+BankFAQ_Clean,750,7,0,0,faq_id; question; answer; category; language; source_type; last_updated
+KnowledgeBase_Clean,1000,3,0,0,Section; Question; Answer
+HDFC_FAQ_Clean,2240,4,0,1,question; answer; found_duplicate; quality_note
+Cybersecurity_Clean,55,9,0,0,record_id; category; question; answer; intent; risk_level; language; data_type; review_status
+Privacy_Security_Clean,60,6,0,0,Task ID; Domain; Instruction / Input Prompt; Authoritative Context Snippet; Target Model Response (JSON); review_status
+GapFiller_Risk,28,12,0,0,example_id; task_type; user_query; intent; risk_level; expected_action; escalation_required; reason; language; provenance; review_status; risk_taxonomy_status
+GapFiller_Security,20,8,0,0,example_id; scenario; security_category; risk_level; expected_action; expected_behaviour; provenance; review_status
+GapFiller_Eval,15,8,0,0,test_id; category; test_prompt; expected_system_behaviour; pass_criterion; severity; gate_status; provenance
+SFT_Readiness,4,2,0,0,status; records
+Suite_Overview,5,4,0,0,Dataset Suite ID; Dataset Name; Total Row Count; Purpose
+Bank77_AllData_Ref,13083,4,0,0,id; text; category; split

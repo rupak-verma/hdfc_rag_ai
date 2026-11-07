@@ -1,0 +1,877 @@
+[
+ {
+  "type": "answerable",
+  "question": "Will a Defence ID be accepted as photo proof for a defence salary account?",
+  "relevant_document_ids": [
+   "DOC-01699"
+  ],
+  "style": "kw",
+  "id": "Q001",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What does a bank's balance sheet show?",
+  "relevant_document_ids": [
+   "DOC-00392"
+  ],
+  "style": "kw",
+  "id": "Q002",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What do you call a borrower who can pay but deliberately does not?",
+  "relevant_document_ids": [
+   "DOC-00866"
+  ],
+  "style": "para",
+  "id": "Q003",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Will I get the same share certificates back after rematerialisation?",
+  "relevant_document_ids": [
+   "DOC-02101"
+  ],
+  "style": "kw",
+  "id": "Q004",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What document confirms that my loan has been approved?",
+  "relevant_document_ids": [
+   "DOC-00250"
+  ],
+  "style": "para",
+  "id": "Q005",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Can I still go through my broker to apply for an IPO?",
+  "relevant_document_ids": [
+   "DOC-02179"
+  ],
+  "style": "kw",
+  "id": "Q006",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Is tax cut from the interest I earn on my savings account?",
+  "relevant_document_ids": [
+   "DOC-00098"
+  ],
+  "style": "para",
+  "id": "Q007",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What is a letter of credit that pays at once when shipping documents are shown?",
+  "relevant_document_ids": [
+   "DOC-00712"
+  ],
+  "style": "para",
+  "id": "Q008",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "How do I change the bank details linked to my demat account?",
+  "relevant_document_ids": [
+   "DOC-01994"
+  ],
+  "style": "para",
+  "id": "Q009",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Which mutual fund invests mainly in stocks?",
+  "relevant_document_ids": [
+   "DOC-00465"
+  ],
+  "style": "para",
+  "id": "Q010",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "How do I file my GST return online?",
+  "relevant_document_ids": [],
+  "style": "near_topic",
+  "id": "Q011",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What is the top-up option that raises my cover every year?",
+  "relevant_document_ids": [
+   "DOC-02672"
+  ],
+  "style": "para",
+  "id": "Q012",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "How many days of cash outflow must banks cover with liquid assets?",
+  "relevant_document_ids": [
+   "DOC-00426"
+  ],
+  "style": "kw",
+  "id": "Q013",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Where can I use the Regalia ForexPlus Card?",
+  "relevant_document_ids": [
+   "DOC-01402"
+  ],
+  "style": "kw",
+  "id": "Q014",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Do I need an account with the bank to buy a Giftplus card?",
+  "relevant_document_ids": [
+   "DOC-01282"
+  ],
+  "style": "kw",
+  "id": "Q015",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Does a KYC Acknowledgement ever expire?",
+  "relevant_document_ids": [
+   "DOC-02155"
+  ],
+  "style": "kw",
+  "id": "Q016",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Can I divide one fixed deposit into several smaller deposits?",
+  "relevant_document_ids": [
+   "DOC-00958"
+  ],
+  "style": "para",
+  "id": "Q017",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "How do I follow the daily NAV of my policy fund?",
+  "relevant_document_ids": [
+   "DOC-02648"
+  ],
+  "style": "kw",
+  "id": "Q018",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Can I set up a standing instruction for postpaid bill payments too?",
+  "relevant_document_ids": [
+   "DOC-01506"
+  ],
+  "style": "kw",
+  "id": "Q019",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Where can I use my EasyShop International Debit Card?",
+  "relevant_document_ids": [
+   "DOC-01221"
+  ],
+  "style": "kw",
+  "id": "Q020",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "How do I reset my Netflix password?",
+  "relevant_document_ids": [],
+  "style": "off_topic",
+  "id": "Q021",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "Explain quantum computing in simple terms.",
+  "relevant_document_ids": [],
+  "style": "off_topic",
+  "id": "Q022",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What is an account used to trade currency pairs through a broker?",
+  "relevant_document_ids": [
+   "DOC-00704"
+  ],
+  "style": "para",
+  "id": "Q023",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "How do I apply for a rights issue through ASBA?",
+  "relevant_document_ids": [
+   "DOC-02118"
+  ],
+  "style": "kw",
+  "id": "Q024",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "Who won the cricket world cup?",
+  "relevant_document_ids": [],
+  "style": "off_topic",
+  "id": "Q025",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "How do I book a flight ticket online?",
+  "relevant_document_ids": [],
+  "style": "off_topic",
+  "id": "Q026",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Can I take money out of my recurring deposit before maturity?",
+  "relevant_document_ids": [
+   "DOC-01871",
+   "DOC-01923"
+  ],
+  "style": "para",
+  "id": "Q027",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Do dematerialised shares carry certificate numbers?",
+  "relevant_document_ids": [
+   "DOC-02024"
+  ],
+  "style": "kw",
+  "id": "Q028",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What is a balance transfer home loan?",
+  "relevant_document_ids": [
+   "DOC-02241"
+  ],
+  "style": "kw",
+  "id": "Q029",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Which loan pays for salaries and inventory of a small business?",
+  "relevant_document_ids": [
+   "DOC-00280"
+  ],
+  "style": "para",
+  "id": "Q030",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Can I add a nominee to my safe deposit locker?",
+  "relevant_document_ids": [
+   "DOC-01904"
+  ],
+  "style": "para",
+  "id": "Q031",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What does own contribution mean in a home loan?",
+  "relevant_document_ids": [
+   "DOC-02223"
+  ],
+  "style": "kw",
+  "id": "Q032",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Am I eligible for an education loan to study in India?",
+  "relevant_document_ids": [
+   "DOC-02400"
+  ],
+  "style": "kw",
+  "id": "Q033",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Why is a banker's cheque safer than a personal cheque?",
+  "relevant_document_ids": [
+   "DOC-00069"
+  ],
+  "style": "kw",
+  "id": "Q034",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "What is the weather in Mumbai today?",
+  "relevant_document_ids": [],
+  "style": "off_topic",
+  "id": "Q035",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Can I repay my student loan using post-dated cheques or a standing instruction?",
+  "relevant_document_ids": [
+   "DOC-02410"
+  ],
+  "style": "para",
+  "id": "Q036",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Can I choose the date of my monthly recurring deposit instalment?",
+  "relevant_document_ids": [
+   "DOC-01859"
+  ],
+  "style": "kw",
+  "id": "Q037",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Can a bank sell a defaulter's secured property without going to court?",
+  "relevant_document_ids": [
+   "DOC-00277"
+  ],
+  "style": "para",
+  "id": "Q038",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "How much does the bank's CEO earn?",
+  "relevant_document_ids": [],
+  "style": "near_topic",
+  "id": "Q039",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "Write a poem about the monsoon.",
+  "relevant_document_ids": [],
+  "style": "off_topic",
+  "id": "Q040",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "How do I buy Bitcoin through my bank account?",
+  "relevant_document_ids": [],
+  "style": "near_topic",
+  "id": "Q041",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What does the loss of checked baggage benefit cover?",
+  "relevant_document_ids": [
+   "DOC-02812"
+  ],
+  "style": "kw",
+  "id": "Q042",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "What is the IFSC code of the ICICI Bank Pune branch?",
+  "relevant_document_ids": [],
+  "style": "near_topic",
+  "id": "Q043",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What happens if I miss six Dream Deposit instalments in a row?",
+  "relevant_document_ids": [
+   "DOC-01920",
+   "DOC-01922"
+  ],
+  "style": "kw",
+  "id": "Q044",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "How do government subsidies reach my bank account directly?",
+  "relevant_document_ids": [
+   "DOC-00961"
+  ],
+  "style": "para",
+  "id": "Q045",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "Will the bank be closed on Diwali this year?",
+  "relevant_document_ids": [],
+  "style": "near_topic",
+  "id": "Q046",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Who can buy a multi-year home insurance policy?",
+  "relevant_document_ids": [
+   "DOC-02856"
+  ],
+  "style": "para",
+  "id": "Q047",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "When does my Accidental Protection Plan Hospital Cash policy begin?",
+  "relevant_document_ids": [
+   "DOC-02702"
+  ],
+  "style": "kw",
+  "id": "Q048",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What are the foreclosure charges on a Loan Against Rental Receivable?",
+  "relevant_document_ids": [
+   "DOC-02470",
+   "DOC-02489"
+  ],
+  "style": "kw",
+  "id": "Q049",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "Give me a recipe for chicken biryani.",
+  "relevant_document_ids": [],
+  "style": "off_topic",
+  "id": "Q050",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Can I get a loan for any brand of tractor?",
+  "relevant_document_ids": [
+   "DOC-02441"
+  ],
+  "style": "para",
+  "id": "Q051",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "How are home loans for under-construction property paid out?",
+  "relevant_document_ids": [
+   "DOC-02295"
+  ],
+  "style": "para",
+  "id": "Q052",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What is it called when a company lets current shareholders buy extra shares at a discount?",
+  "relevant_document_ids": [
+   "DOC-00520"
+  ],
+  "style": "para",
+  "id": "Q053",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "How do I renew my passport?",
+  "relevant_document_ids": [],
+  "style": "near_topic",
+  "id": "Q054",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "How many days after buying do shares reach my demat account?",
+  "relevant_document_ids": [
+   "DOC-00814"
+  ],
+  "style": "para",
+  "id": "Q055",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "What is my current account balance?",
+  "relevant_document_ids": [],
+  "style": "personal_data",
+  "id": "Q056",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "How can I generate a PIN for my new ATM card?",
+  "relevant_document_ids": [
+   "DOC-00541"
+  ],
+  "style": "para",
+  "id": "Q057",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Tell me about government gold bonds that pay interest on top of gold price returns",
+  "relevant_document_ids": [
+   "DOC-00210"
+  ],
+  "style": "para",
+  "id": "Q058",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Can I put more than the usual 12% of my pay into my provident fund?",
+  "relevant_document_ids": [
+   "DOC-00667"
+  ],
+  "style": "kw",
+  "id": "Q059",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Is there a fee for paying bills at an ATM through BillPay?",
+  "relevant_document_ids": [
+   "DOC-01440"
+  ],
+  "style": "para",
+  "id": "Q060",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What is a benefit policy in insurance?",
+  "relevant_document_ids": [
+   "DOC-02716"
+  ],
+  "style": "kw",
+  "id": "Q061",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What paperwork do I take to the bank to get a student loan?",
+  "relevant_document_ids": [
+   "DOC-00559"
+  ],
+  "style": "para",
+  "id": "Q062",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Can I get an overdraft against my recurring deposit?",
+  "relevant_document_ids": [
+   "DOC-01866"
+  ],
+  "style": "kw",
+  "id": "Q063",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "I never received a debit card after opening my savings account. What should I do?",
+  "relevant_document_ids": [
+   "DOC-00540"
+  ],
+  "style": "para",
+  "id": "Q064",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "Can I get a loan to buy a private jet?",
+  "relevant_document_ids": [],
+  "style": "near_topic",
+  "id": "Q065",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Why do I see only six months of transactions after registering mPassbook on a new phone?",
+  "relevant_document_ids": [
+   "DOC-03069"
+  ],
+  "style": "para",
+  "id": "Q066",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Why does the RBI buy or sell dollars when the rupee swings sharply?",
+  "relevant_document_ids": [
+   "DOC-00716"
+  ],
+  "style": "para",
+  "id": "Q067",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Is Aadhaar compulsory for opening a bank account?",
+  "relevant_document_ids": [
+   "DOC-00539"
+  ],
+  "style": "para",
+  "id": "Q068",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "How do apps like Paytm keep my money?",
+  "relevant_document_ids": [
+   "DOC-00139"
+  ],
+  "style": "para",
+  "id": "Q069",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "What should I do about a void transaction on my Platinum Debit Card?",
+  "relevant_document_ids": [
+   "DOC-01201",
+   "DOC-01204",
+   "DOC-01212",
+   "DOC-01219",
+   "DOC-01223",
+   "DOC-01228",
+   "DOC-01240",
+   "DOC-01243"
+  ],
+  "style": "kw",
+  "id": "Q070",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "What is the phone number of the Chennai branch manager?",
+  "relevant_document_ids": [],
+  "style": "near_topic",
+  "id": "Q071",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Who regulates the stock market in India?",
+  "relevant_document_ids": [
+   "DOC-00458"
+  ],
+  "style": "para",
+  "id": "Q072",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "How do I change a flat tyre on my car?",
+  "relevant_document_ids": [],
+  "style": "off_topic",
+  "id": "Q073",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "What interest rate does the HDFC Diamond Millionaire savings account pay?",
+  "relevant_document_ids": [],
+  "style": "fake_product",
+  "id": "Q074",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "What are the Sunday opening hours of the Fort branch in Mumbai?",
+  "relevant_document_ids": [],
+  "style": "near_topic",
+  "id": "Q075",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Where are IPOs and new bond issues sold for the first time?",
+  "relevant_document_ids": [
+   "DOC-00763"
+  ],
+  "style": "para",
+  "id": "Q076",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Who is licensed by IRDAI to sell policies of only one insurer?",
+  "relevant_document_ids": [
+   "DOC-00661"
+  ],
+  "style": "para",
+  "id": "Q077",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "What documents do I need for a Canada tourist visa?",
+  "relevant_document_ids": [],
+  "style": "near_topic",
+  "id": "Q078",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "What is the capital of France?",
+  "relevant_document_ids": [],
+  "style": "off_topic",
+  "id": "Q079",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "When will my last transaction reach the beneficiary?",
+  "relevant_document_ids": [],
+  "style": "personal_data",
+  "id": "Q080",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "What is the annual fee on the HDFC Platinum Elite Supreme credit card?",
+  "relevant_document_ids": [],
+  "style": "fake_product",
+  "id": "Q081",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "absent",
+  "question": "Does the bank offer pet insurance for dogs?",
+  "relevant_document_ids": [],
+  "style": "near_topic",
+  "id": "Q082",
+  "split": "test",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ },
+ {
+  "type": "answerable",
+  "question": "Do I need a separate Apex Current Account at every office location?",
+  "relevant_document_ids": [
+   "DOC-01778"
+  ],
+  "style": "kw",
+  "id": "Q083",
+  "split": "dev",
+  "review_status": "DRAFT_BY_CLAUDE_NEEDS_HUMAN_REVIEW"
+ }
+]

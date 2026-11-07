@@ -1,0 +1,25 @@
+field,meaning,type
+document_id,"DOC-00001 style stable ID, assigned in source order",text
+source_record_id,record_id in the workbook's FAQ_Canonical sheet (traceability),text
+title,The question (or title) as cleaned,text
+text,The answer as cleaned,text
+category,Workbook category; for 'Uncategorized' rows a keyword-rule category,text
+category_method,"'workbook' or 'keyword_rule' (rule-assigned, lower trust)",text
+source_name,Original supplied file the record came from,text
+source_sheet,Workbook sheet used,text
+provenance,Workbook provenance tag (all are synthetic_or_unverified_source),text
+verification_status,"DEMO_LABELLED (usable, must be labelled) or VERIFIED_PUBLIC (checked against a public URL)",enum
+answer_label,Wording any answer built on this record must carry,text
+version,Document version; 'unversioned' because the sources carry none,text
+effective_date,Date the content applies from; blank because the sources carry none,date
+source_url,Public URL checked during verification; blank until verified,text
+source_page,Page/section in the public source; blank until verified,text
+needs_fact_check,"True if the answer mentions a figure/fee/limit, a contact/URL, or an HDFC-specific claim",bool
+fact_check_reasons,Which of those triggered the flag,text
+product_ambiguous,True if the question says 'this card/plan...' so the product is only named in the answer,bool
+language,Assumed English; non-English records are excluded,text
+char_count,Length of the answer in characters,int
+chunk_id,"CH-<doc number>-<part> stable chunk ID, e.g. CH-00012-00",text
+chunk_index,"Position of the chunk inside its document, from 0",int
+chunk_text,Question line + answer part; this is what is embedded and searched,text
+metadata,"JSON copy of category, source, status, label and flags (goes to the pgvector table)",json

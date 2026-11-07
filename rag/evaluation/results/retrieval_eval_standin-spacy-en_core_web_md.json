@@ -1,0 +1,447 @@
+{
+  "model_id": "standin:spacy-en_core_web_md",
+  "standin": true,
+  "dimension": 300,
+  "keyword_backend": "bm25",
+  "store": "pg",
+  "corpus_chunks": 3604,
+  "thresholds": {
+    "min_cosine": 0.88,
+    "min_coverage": 0.0
+  },
+  "date": "2026-11-04",
+  "n_dev": 42,
+  "n_test": 41,
+  "retrieval_test": {
+    "keyword": {
+      "n": 29,
+      "recall@1": 0.621,
+      "recall@1_ci95": [
+        0.44,
+        0.773
+      ],
+      "recall@3": 0.724,
+      "recall@3_ci95": [
+        0.543,
+        0.853
+      ],
+      "recall@5": 0.759,
+      "recall@5_ci95": [
+        0.579,
+        0.878
+      ],
+      "mrr": 0.686
+    },
+    "vector": {
+      "n": 29,
+      "recall@1": 0.276,
+      "recall@1_ci95": [
+        0.147,
+        0.457
+      ],
+      "recall@3": 0.483,
+      "recall@3_ci95": [
+        0.314,
+        0.656
+      ],
+      "recall@5": 0.517,
+      "recall@5_ci95": [
+        0.344,
+        0.686
+      ],
+      "mrr": 0.382
+    },
+    "hybrid": {
+      "n": 29,
+      "recall@1": 0.448,
+      "recall@1_ci95": [
+        0.284,
+        0.625
+      ],
+      "recall@3": 0.621,
+      "recall@3_ci95": [
+        0.44,
+        0.773
+      ],
+      "recall@5": 0.655,
+      "recall@5_ci95": [
+        0.473,
+        0.801
+      ],
+      "mrr": 0.553
+    }
+  },
+  "retrieval_all": {
+    "keyword": {
+      "n": 59,
+      "recall@1": 0.695,
+      "recall@1_ci95": [
+        0.569,
+        0.797
+      ],
+      "recall@3": 0.797,
+      "recall@3_ci95": [
+        0.677,
+        0.88
+      ],
+      "recall@5": 0.814,
+      "recall@5_ci95": [
+        0.696,
+        0.893
+      ],
+      "mrr": 0.755
+    },
+    "vector": {
+      "n": 59,
+      "recall@1": 0.356,
+      "recall@1_ci95": [
+        0.246,
+        0.483
+      ],
+      "recall@3": 0.475,
+      "recall@3_ci95": [
+        0.353,
+        0.6
+      ],
+      "recall@5": 0.508,
+      "recall@5_ci95": [
+        0.384,
+        0.632
+      ],
+      "mrr": 0.425
+    },
+    "hybrid": {
+      "n": 59,
+      "recall@1": 0.508,
+      "recall@1_ci95": [
+        0.384,
+        0.632
+      ],
+      "recall@3": 0.61,
+      "recall@3_ci95": [
+        0.483,
+        0.724
+      ],
+      "recall@5": 0.678,
+      "recall@5_ci95": [
+        0.551,
+        0.783
+      ],
+      "mrr": 0.597
+    }
+  },
+  "gate_test": {
+    "answerable_pass_rate": 0.793,
+    "false_abstain_rate": 0.207,
+    "absent_abstain_rate": 0.75,
+    "answerable_correct_and_passed_at5": 0.517,
+    "absent_abstain_rate_excl_personal_data": 0.9,
+    "absent_abstain_ci95": [
+      0.468,
+      0.911
+    ],
+    "absent_abstain_by_kind": {
+      "fake_product": "1/1",
+      "near_topic": "3/4",
+      "off_topic": "5/5",
+      "personal_data": "0/2"
+    },
+    "hybrid_recall@5_by_style": {
+      "kw": "8/10",
+      "para": "11/19"
+    }
+  },
+  "gate_dev": {
+    "answerable_pass_rate": 0.7,
+    "false_abstain_rate": 0.3,
+    "absent_abstain_rate": 1.0,
+    "answerable_correct_and_passed_at5": 0.567,
+    "absent_abstain_rate_excl_personal_data": 1.0,
+    "absent_abstain_ci95": [
+      0.757,
+      1.0
+    ],
+    "absent_abstain_by_kind": {
+      "fake_product": "1/1",
+      "near_topic": "7/7",
+      "off_topic": "4/4"
+    },
+    "hybrid_recall@5_by_style": {
+      "kw": "12/17",
+      "para": "9/13"
+    }
+  },
+  "failures_answerable_missed_at5": [
+    {
+      "id": "Q003",
+      "question": "What do you call a borrower who can pay but deliberately does not?",
+      "correct": [
+        "DOC-00866"
+      ],
+      "got_top3": [
+        "DOC-02427",
+        "DOC-00303",
+        "DOC-02074"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "Q007",
+      "question": "Is tax cut from the interest I earn on my savings account?",
+      "correct": [
+        "DOC-00098"
+      ],
+      "got_top3": [
+        "DOC-01653",
+        "DOC-01939",
+        "DOC-00080"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q008",
+      "question": "What is a letter of credit that pays at once when shipping documents are shown?",
+      "correct": [
+        "DOC-00712"
+      ],
+      "got_top3": [
+        "DOC-00702",
+        "DOC-01154",
+        "DOC-01672"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "Q014",
+      "question": "Where can I use the Regalia ForexPlus Card?",
+      "correct": [
+        "DOC-01402"
+      ],
+      "got_top3": [
+        "DOC-01414",
+        "DOC-01408",
+        "DOC-01417"
+      ],
+      "rank": 10
+    },
+    {
+      "id": "Q015",
+      "question": "Do I need an account with the bank to buy a Giftplus card?",
+      "correct": [
+        "DOC-01282"
+      ],
+      "got_top3": [
+        "DOC-01270",
+        "DOC-01273",
+        "DOC-01279"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "Q017",
+      "question": "Can I divide one fixed deposit into several smaller deposits?",
+      "correct": [
+        "DOC-00958"
+      ],
+      "got_top3": [
+        "DOC-01852",
+        "DOC-01839",
+        "DOC-01839"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q018",
+      "question": "How do I follow the daily NAV of my policy fund?",
+      "correct": [
+        "DOC-02648"
+      ],
+      "got_top3": [
+        "DOC-00462",
+        "DOC-02632",
+        "DOC-02617"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "Q019",
+      "question": "Can I set up a standing instruction for postpaid bill payments too?",
+      "correct": [
+        "DOC-01506"
+      ],
+      "got_top3": [
+        "DOC-01507",
+        "DOC-01507",
+        "DOC-01507"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q020",
+      "question": "Where can I use my EasyShop International Debit Card?",
+      "correct": [
+        "DOC-01221"
+      ],
+      "got_top3": [
+        "DOC-01149",
+        "DOC-00184",
+        "DOC-01161"
+      ],
+      "rank": 10
+    },
+    {
+      "id": "Q027",
+      "question": "Can I take money out of my recurring deposit before maturity?",
+      "correct": [
+        "DOC-01871",
+        "DOC-01923"
+      ],
+      "got_top3": [
+        "DOC-00021",
+        "DOC-01863",
+        "DOC-01856"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q031",
+      "question": "Can I add a nominee to my safe deposit locker?",
+      "correct": [
+        "DOC-01904"
+      ],
+      "got_top3": [
+        "DOC-01906",
+        "DOC-01682",
+        "DOC-01908"
+      ],
+      "rank": 11
+    },
+    {
+      "id": "Q048",
+      "question": "When does my Accidental Protection Plan Hospital Cash policy begin?",
+      "correct": [
+        "DOC-02702"
+      ],
+      "got_top3": [
+        "DOC-02703",
+        "DOC-02697",
+        "DOC-02687"
+      ],
+      "rank": 10
+    },
+    {
+      "id": "Q052",
+      "question": "How are home loans for under-construction property paid out?",
+      "correct": [
+        "DOC-02295"
+      ],
+      "got_top3": [
+        "DOC-02225",
+        "DOC-00321",
+        "DOC-02248"
+      ],
+      "rank": 18
+    },
+    {
+      "id": "Q055",
+      "question": "How many days after buying do shares reach my demat account?",
+      "correct": [
+        "DOC-00814"
+      ],
+      "got_top3": [
+        "DOC-02009",
+        "DOC-00455",
+        "DOC-00044"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q057",
+      "question": "How can I generate a PIN for my new ATM card?",
+      "correct": [
+        "DOC-00541"
+      ],
+      "got_top3": [
+        "DOC-00542",
+        "DOC-01067",
+        "DOC-03125"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "Q059",
+      "question": "Can I put more than the usual 12% of my pay into my provident fund?",
+      "correct": [
+        "DOC-00667"
+      ],
+      "got_top3": [
+        "DOC-00666",
+        "DOC-02604",
+        "DOC-00018"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "Q060",
+      "question": "Is there a fee for paying bills at an ATM through BillPay?",
+      "correct": [
+        "DOC-01440"
+      ],
+      "got_top3": [
+        "DOC-01478",
+        "DOC-01479",
+        "DOC-02963"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q062",
+      "question": "What paperwork do I take to the bank to get a student loan?",
+      "correct": [
+        "DOC-00559"
+      ],
+      "got_top3": [
+        "DOC-00573",
+        "DOC-02422",
+        "DOC-00956"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q068",
+      "question": "Is Aadhaar compulsory for opening a bank account?",
+      "correct": [
+        "DOC-00539"
+      ],
+      "got_top3": [
+        "DOC-00560",
+        "DOC-03219",
+        "DOC-00555"
+      ],
+      "rank": 14
+    }
+  ],
+  "failures_absent_answered": [
+    {
+      "id": "Q056",
+      "question": "What is my current account balance?",
+      "kind": "personal_data",
+      "cos": 0.969,
+      "cov": 1.0
+    },
+    {
+      "id": "Q071",
+      "question": "What is the phone number of the Chennai branch manager?",
+      "kind": "near_topic",
+      "cos": 0.888,
+      "cov": 0.4
+    },
+    {
+      "id": "Q080",
+      "question": "When will my last transaction reach the beneficiary?",
+      "kind": "personal_data",
+      "cos": 0.902,
+      "cov": 0.5
+    }
+  ]
+}
