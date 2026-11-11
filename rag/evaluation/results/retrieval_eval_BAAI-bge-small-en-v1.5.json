@@ -1,0 +1,310 @@
+{
+  "model_id": "BAAI/bge-small-en-v1.5",
+  "standin": false,
+  "dimension": 384,
+  "keyword_backend": "bm25",
+  "store": "file",
+  "corpus_chunks": 3604,
+  "thresholds": {
+    "min_cosine": 0.73,
+    "min_coverage": 0.0
+  },
+  "date": "2026-11-10",
+  "n_dev": 42,
+  "n_test": 41,
+  "retrieval_test": {
+    "keyword": {
+      "n": 29,
+      "recall@1": 0.621,
+      "recall@1_ci95": [
+        0.44,
+        0.773
+      ],
+      "recall@3": 0.724,
+      "recall@3_ci95": [
+        0.543,
+        0.853
+      ],
+      "recall@5": 0.759,
+      "recall@5_ci95": [
+        0.579,
+        0.878
+      ],
+      "mrr": 0.686
+    },
+    "vector": {
+      "n": 29,
+      "recall@1": 0.552,
+      "recall@1_ci95": [
+        0.375,
+        0.716
+      ],
+      "recall@3": 0.759,
+      "recall@3_ci95": [
+        0.579,
+        0.878
+      ],
+      "recall@5": 0.862,
+      "recall@5_ci95": [
+        0.694,
+        0.945
+      ],
+      "mrr": 0.693
+    },
+    "hybrid": {
+      "n": 29,
+      "recall@1": 0.586,
+      "recall@1_ci95": [
+        0.407,
+        0.745
+      ],
+      "recall@3": 0.759,
+      "recall@3_ci95": [
+        0.579,
+        0.878
+      ],
+      "recall@5": 0.793,
+      "recall@5_ci95": [
+        0.616,
+        0.902
+      ],
+      "mrr": 0.689
+    }
+  },
+  "retrieval_all": {
+    "keyword": {
+      "n": 59,
+      "recall@1": 0.695,
+      "recall@1_ci95": [
+        0.569,
+        0.797
+      ],
+      "recall@3": 0.797,
+      "recall@3_ci95": [
+        0.677,
+        0.88
+      ],
+      "recall@5": 0.814,
+      "recall@5_ci95": [
+        0.696,
+        0.893
+      ],
+      "mrr": 0.755
+    },
+    "vector": {
+      "n": 59,
+      "recall@1": 0.661,
+      "recall@1_ci95": [
+        0.534,
+        0.769
+      ],
+      "recall@3": 0.847,
+      "recall@3_ci95": [
+        0.735,
+        0.918
+      ],
+      "recall@5": 0.898,
+      "recall@5_ci95": [
+        0.795,
+        0.953
+      ],
+      "mrr": 0.765
+    },
+    "hybrid": {
+      "n": 59,
+      "recall@1": 0.678,
+      "recall@1_ci95": [
+        0.551,
+        0.783
+      ],
+      "recall@3": 0.831,
+      "recall@3_ci95": [
+        0.715,
+        0.905
+      ],
+      "recall@5": 0.847,
+      "recall@5_ci95": [
+        0.735,
+        0.918
+      ],
+      "mrr": 0.764
+    }
+  },
+  "gate_test": {
+    "answerable_pass_rate": 0.966,
+    "false_abstain_rate": 0.034,
+    "absent_abstain_rate": 0.833,
+    "answerable_correct_and_passed_at5": 0.759,
+    "absent_abstain_rate_excl_personal_data": 1.0,
+    "absent_abstain_ci95": [
+      0.552,
+      0.953
+    ],
+    "absent_abstain_by_kind": {
+      "fake_product": "1/1",
+      "near_topic": "4/4",
+      "off_topic": "5/5",
+      "personal_data": "0/2"
+    },
+    "hybrid_recall@5_by_style": {
+      "kw": "9/10",
+      "para": "14/19"
+    }
+  },
+  "gate_dev": {
+    "answerable_pass_rate": 0.933,
+    "false_abstain_rate": 0.067,
+    "absent_abstain_rate": 1.0,
+    "answerable_correct_and_passed_at5": 0.833,
+    "absent_abstain_rate_excl_personal_data": 1.0,
+    "absent_abstain_ci95": [
+      0.757,
+      1.0
+    ],
+    "absent_abstain_by_kind": {
+      "fake_product": "1/1",
+      "near_topic": "7/7",
+      "off_topic": "4/4"
+    },
+    "hybrid_recall@5_by_style": {
+      "kw": "16/17",
+      "para": "11/13"
+    }
+  },
+  "failures_answerable_missed_at5": [
+    {
+      "id": "Q007",
+      "question": "Is tax cut from the interest I earn on my savings account?",
+      "correct": [
+        "DOC-00098"
+      ],
+      "got_top3": [
+        "DOC-01653",
+        "DOC-01939",
+        "DOC-00080"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "Q014",
+      "question": "Where can I use the Regalia ForexPlus Card?",
+      "correct": [
+        "DOC-01402"
+      ],
+      "got_top3": [
+        "DOC-01414",
+        "DOC-01412",
+        "DOC-01417"
+      ],
+      "rank": 17
+    },
+    {
+      "id": "Q017",
+      "question": "Can I divide one fixed deposit into several smaller deposits?",
+      "correct": [
+        "DOC-00958"
+      ],
+      "got_top3": [
+        "DOC-01900",
+        "DOC-01889",
+        "DOC-01896"
+      ],
+      "rank": 22
+    },
+    {
+      "id": "Q019",
+      "question": "Can I set up a standing instruction for postpaid bill payments too?",
+      "correct": [
+        "DOC-01506"
+      ],
+      "got_top3": [
+        "DOC-01507",
+        "DOC-01507",
+        "DOC-01493"
+      ],
+      "rank": 9
+    },
+    {
+      "id": "Q027",
+      "question": "Can I take money out of my recurring deposit before maturity?",
+      "correct": [
+        "DOC-01871",
+        "DOC-01923"
+      ],
+      "got_top3": [
+        "DOC-01863",
+        "DOC-01856",
+        "DOC-01867"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "Q055",
+      "question": "How many days after buying do shares reach my demat account?",
+      "correct": [
+        "DOC-00814"
+      ],
+      "got_top3": [
+        "DOC-02106",
+        "DOC-01996",
+        "DOC-00789"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "Q057",
+      "question": "How can I generate a PIN for my new ATM card?",
+      "correct": [
+        "DOC-00541"
+      ],
+      "got_top3": [
+        "DOC-01067",
+        "DOC-00542",
+        "DOC-01066"
+      ],
+      "rank": 11
+    },
+    {
+      "id": "Q060",
+      "question": "Is there a fee for paying bills at an ATM through BillPay?",
+      "correct": [
+        "DOC-01440"
+      ],
+      "got_top3": [
+        "DOC-01442",
+        "DOC-01445",
+        "DOC-01457"
+      ],
+      "rank": 9
+    },
+    {
+      "id": "Q062",
+      "question": "What paperwork do I take to the bank to get a student loan?",
+      "correct": [
+        "DOC-00559"
+      ],
+      "got_top3": [
+        "DOC-02363",
+        "DOC-02381",
+        "DOC-00551"
+      ],
+      "rank": 19
+    }
+  ],
+  "failures_absent_answered": [
+    {
+      "id": "Q056",
+      "question": "What is my current account balance?",
+      "kind": "personal_data",
+      "cos": 0.807,
+      "cov": 1.0
+    },
+    {
+      "id": "Q080",
+      "question": "When will my last transaction reach the beneficiary?",
+      "kind": "personal_data",
+      "cos": 0.733,
+      "cov": 0.5
+    }
+  ]
+}
