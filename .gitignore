@@ -1,6 +1,6 @@
 .env
 __pycache__/
 .pytest_cache/
-rag/data/embeddings/          # regenerate with rag.embeddings.generate_embeddings
+rag/data/embeddings/
 .venv/
 venv/
