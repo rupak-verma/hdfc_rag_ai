@@ -74,6 +74,14 @@ def test_built_dataset_invariants():
     D = pd.read_csv(APPR/"canonical_documents.csv", dtype=str).fillna("")
     C = pd.read_csv(APPR/"canonical_chunks.csv", dtype=str).fillna("")
     X = pd.read_csv("rag/data/cleaned/excluded_records.csv", dtype=str)
+    quarantined_ids = set(
+    X.loc[
+        X["training_eligibility"] == "QUARANTINE_UNVERIFIED_CLAIM",
+        "record_id"
+        ]
+    )
+    assert len(quarantined_ids) == 1225
+    assert not (set(D["source_record_id"]) & quarantined_ids)
     assert len(D) + len(X) == 3238
     assert D.document_id.is_unique and C.chunk_id.is_unique
     assert set(C.document_id) == set(D.document_id)

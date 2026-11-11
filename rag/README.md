@@ -37,7 +37,6 @@ Changing the embedding model changes the vector size: use `python -m rag.db.migr
 - The original workbook is read-only and checksum-tested; every excluded row is listed with a reason in `rag/data/cleaned/excluded_records.csv`.
 - Retrieved text is data, not instructions: the prompt builder must wrap it as quoted evidence.
 
-## Contract details to agree with Person 1
 
 ## Retrieval backend configuration
 
@@ -48,6 +47,8 @@ Changing the embedding model changes the vector size: use `python -m rag.db.migr
 - Both keyword backends can be combined with vector retrieval using Reciprocal Rank Fusion (RRF).
 - The default keyword backend is `bm25`.
 
+## Contract details to agree with Person 1
+
 The guide's response shape is respected. Two **additive** choices need the team's agreement: `sources[].verification_status` / `score`, and
 `retrieval_metadata` fields `abstained`, `reason`, `confidence`, `lexical_coverage`, `embedding_model`, `unknown_terms`. The guide's file tree has no
 single entry file, so `rag/retrieval/retriever.py` is added as the one door to the module.
@@ -56,13 +57,13 @@ single entry file, so `rag/retrieval/retriever.py` is added as the one door to t
 
 | Tested here | Actual result |
 |---|---|
-| Automated tests | 28 passed, 3 skipped using `python -m pytest -q rag/tests` |
+| Automated tests | 31 passed, 0 skipped using `python -m pytest -q rag/tests` |
 | Real embedding model | BAAI/bge-small-en-v1.5 tested; actual vector dimension: 384 |
-| Embedding dataset | 3,604 chunks embedded using the selected model |
-| Embedding comparison | MiniLM, BGE-small-en-v1.5 and MPNet compared; BGE selected based on development hybrid MRR |
+| Embedding dataset | 2,074 chunks embedded using the selected model |
+| Embedding comparison | MiniLM, BGE-small-en-v1.5 and MPNet compared; BGE selected based on development hybrid MRR in the earlier, pre-correction dataset comparison |
 | Neon PostgreSQL | Hosted database connection, migration and ingestion tested |
 | pgvector | Neon pgvector extension version 0.8.6 |
-| Database ingestion | 3,226 documents and 3,604 chunks ingested |
+| Database ingestion | 2,003 documents and 2,074 chunks ingested |
 | Retrieval | Neon-backed retrieval tested with BGE embeddings |
 | Evaluation | Retrieval evaluation completed with the real BGE embedding model |
 
@@ -72,13 +73,13 @@ Test evaluation sample: 29 questions.
 
 | Metric | Result |
 |---|---:|
-| Hybrid Recall@5 | 0.793 |
-| Hybrid MRR | 0.689 |
-| Answerable question pass rate | 0.966 |
-| False abstention rate | 0.034 |
-| Absent-answer abstention | 0.833 |
+| Hybrid Recall@5 | 0.552 |
+| Hybrid MRR | 0.503 |
+| Answerable question pass rate | 0.931 |
+| False abstention rate | 0.069 |
+| Absent-answer abstention | 0.917 |
 
-The evaluation sample is small and should not be interpreted as production-level validation. Two personal-data questions were not correctly abstained on; personal-data and account-specific questions must be routed through the approved backend/database authorization flow rather than answered using RAG.
+The evaluation sample is small and should not be interpreted as production-level validation. One of two personal-data questions was not correctly abstained on; personal-data and account-specific questions must be routed through the approved backend/database authorization flow rather than answered using RAG.
 
 Full results: `docs/RAG_EVALUATION_REPORT.md`.
 
@@ -86,12 +87,12 @@ The evaluation questions were Claude-drafted. A separate completed human-review 
 
 ## Known limitations
 
-- All 3,226 retained records remain `DEMO_LABELLED`; none has been promoted to `VERIFIED_PUBLIC`. Do not present this dataset as confirmed official HDFC Bank policy.
-- 1,240 records are flagged for fact-checking, and 280 are flagged as product-ambiguous.
+- All 2,003 retained records remain `DEMO_LABELLED`; none has been promoted to `VERIFIED_PUBLIC`. Do not present this dataset as confirmed official HDFC Bank policy.
+- 98 records are flagged for fact-checking, and 140 are flagged as product-ambiguous. Additionally, 1,225 quarantined records were excluded from the canonical dataset.
 - No version or effective date exists in the available source records, so outdated-policy detection is not supported.
 - The retrieval evaluation uses a small sample of 29 test questions and 42 development questions for threshold calibration.
 - The evaluation questions were Claude-drafted and have not been independently validated through a recorded human-review decision file.
 - The unknown-product guard has limitations: some lowercase invented product names may not be detected.
-- Category labels for 2,216 records were assigned using keyword rules rather than manual classification.
+- Category labels for 1,201 records were assigned using keyword rules rather than manual classification.
 - Personal-data and account-specific questions require the backend's approved, authorized database-query flow; RAG is not an authorization mechanism.
 - Production readiness requires broader evaluation, independent content verification and integration testing.

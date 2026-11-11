@@ -18,9 +18,9 @@
   "BAAI/bge-small-en-v1.5": {
     "min_cosine": 0.73,
     "min_coverage": 0.0,
-    "dev_answerable_pass_rate": 0.933,
+    "dev_answerable_pass_rate": 0.833,
     "dev_absent_abstain_rate": 1.0,
     "calibrated_on": "dev split",
-    "date": "2026-11-10"
+    "date": "2026-11-11"
   }
 }

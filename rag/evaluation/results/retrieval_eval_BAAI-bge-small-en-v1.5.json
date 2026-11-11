@@ -4,158 +4,158 @@
   "dimension": 384,
   "keyword_backend": "bm25",
   "store": "file",
-  "corpus_chunks": 3604,
+  "corpus_chunks": 2074,
   "thresholds": {
     "min_cosine": 0.73,
     "min_coverage": 0.0
   },
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "n_dev": 42,
   "n_test": 41,
   "retrieval_test": {
     "keyword": {
       "n": 29,
-      "recall@1": 0.621,
+      "recall@1": 0.517,
       "recall@1_ci95": [
-        0.44,
-        0.773
+        0.344,
+        0.686
       ],
-      "recall@3": 0.724,
+      "recall@3": 0.552,
       "recall@3_ci95": [
-        0.543,
-        0.853
-      ],
-      "recall@5": 0.759,
-      "recall@5_ci95": [
-        0.579,
-        0.878
-      ],
-      "mrr": 0.686
-    },
-    "vector": {
-      "n": 29,
-      "recall@1": 0.552,
-      "recall@1_ci95": [
         0.375,
         0.716
       ],
-      "recall@3": 0.759,
-      "recall@3_ci95": [
-        0.579,
-        0.878
-      ],
-      "recall@5": 0.862,
+      "recall@5": 0.552,
       "recall@5_ci95": [
-        0.694,
-        0.945
+        0.375,
+        0.716
       ],
-      "mrr": 0.693
+      "mrr": 0.535
+    },
+    "vector": {
+      "n": 29,
+      "recall@1": 0.379,
+      "recall@1_ci95": [
+        0.227,
+        0.56
+      ],
+      "recall@3": 0.552,
+      "recall@3_ci95": [
+        0.375,
+        0.716
+      ],
+      "recall@5": 0.621,
+      "recall@5_ci95": [
+        0.44,
+        0.773
+      ],
+      "mrr": 0.486
     },
     "hybrid": {
       "n": 29,
-      "recall@1": 0.586,
+      "recall@1": 0.448,
       "recall@1_ci95": [
-        0.407,
-        0.745
+        0.284,
+        0.625
       ],
-      "recall@3": 0.759,
+      "recall@3": 0.517,
       "recall@3_ci95": [
-        0.579,
-        0.878
+        0.344,
+        0.686
       ],
-      "recall@5": 0.793,
+      "recall@5": 0.552,
       "recall@5_ci95": [
-        0.616,
-        0.902
+        0.375,
+        0.716
       ],
-      "mrr": 0.689
+      "mrr": 0.503
     }
   },
   "retrieval_all": {
     "keyword": {
       "n": 59,
-      "recall@1": 0.695,
+      "recall@1": 0.576,
       "recall@1_ci95": [
-        0.569,
-        0.797
+        0.449,
+        0.694
       ],
-      "recall@3": 0.797,
+      "recall@3": 0.61,
       "recall@3_ci95": [
-        0.677,
-        0.88
+        0.483,
+        0.724
       ],
-      "recall@5": 0.814,
+      "recall@5": 0.627,
       "recall@5_ci95": [
-        0.696,
-        0.893
+        0.5,
+        0.739
       ],
-      "mrr": 0.755
+      "mrr": 0.604
     },
     "vector": {
       "n": 59,
-      "recall@1": 0.661,
+      "recall@1": 0.508,
       "recall@1_ci95": [
-        0.534,
-        0.769
+        0.384,
+        0.632
       ],
-      "recall@3": 0.847,
+      "recall@3": 0.644,
       "recall@3_ci95": [
-        0.735,
-        0.918
+        0.517,
+        0.754
       ],
-      "recall@5": 0.898,
+      "recall@5": 0.695,
       "recall@5_ci95": [
-        0.795,
-        0.953
+        0.569,
+        0.797
       ],
-      "mrr": 0.765
+      "mrr": 0.59
     },
     "hybrid": {
       "n": 59,
-      "recall@1": 0.678,
+      "recall@1": 0.525,
       "recall@1_ci95": [
-        0.551,
-        0.783
+        0.4,
+        0.647
       ],
-      "recall@3": 0.831,
+      "recall@3": 0.627,
       "recall@3_ci95": [
-        0.715,
-        0.905
+        0.5,
+        0.739
       ],
-      "recall@5": 0.847,
+      "recall@5": 0.661,
       "recall@5_ci95": [
-        0.735,
-        0.918
+        0.534,
+        0.769
       ],
-      "mrr": 0.764
+      "mrr": 0.587
     }
   },
   "gate_test": {
-    "answerable_pass_rate": 0.966,
-    "false_abstain_rate": 0.034,
-    "absent_abstain_rate": 0.833,
-    "answerable_correct_and_passed_at5": 0.759,
+    "answerable_pass_rate": 0.931,
+    "false_abstain_rate": 0.069,
+    "absent_abstain_rate": 0.917,
+    "answerable_correct_and_passed_at5": 0.517,
     "absent_abstain_rate_excl_personal_data": 1.0,
     "absent_abstain_ci95": [
-      0.552,
-      0.953
+      0.646,
+      0.985
     ],
     "absent_abstain_by_kind": {
       "fake_product": "1/1",
       "near_topic": "4/4",
       "off_topic": "5/5",
-      "personal_data": "0/2"
+      "personal_data": "1/2"
     },
     "hybrid_recall@5_by_style": {
-      "kw": "9/10",
-      "para": "14/19"
+      "kw": "4/10",
+      "para": "12/19"
     }
   },
   "gate_dev": {
-    "answerable_pass_rate": 0.933,
-    "false_abstain_rate": 0.067,
+    "answerable_pass_rate": 0.833,
+    "false_abstain_rate": 0.167,
     "absent_abstain_rate": 1.0,
-    "answerable_correct_and_passed_at5": 0.833,
+    "answerable_correct_and_passed_at5": 0.733,
     "absent_abstain_rate_excl_personal_data": 1.0,
     "absent_abstain_ci95": [
       0.757,
@@ -167,36 +167,36 @@
       "off_topic": "4/4"
     },
     "hybrid_recall@5_by_style": {
-      "kw": "16/17",
+      "kw": "12/17",
       "para": "11/13"
     }
   },
   "failures_answerable_missed_at5": [
     {
-      "id": "Q007",
-      "question": "Is tax cut from the interest I earn on my savings account?",
+      "id": "Q005",
+      "question": "What document confirms that my loan has been approved?",
       "correct": [
-        "DOC-00098"
+        "DOC-00250"
       ],
       "got_top3": [
-        "DOC-01653",
-        "DOC-01939",
-        "DOC-00080"
+        "DOC-02292",
+        "DOC-02486",
+        "DOC-00956"
       ],
-      "rank": 8
+      "rank": null
     },
     {
-      "id": "Q014",
-      "question": "Where can I use the Regalia ForexPlus Card?",
+      "id": "Q015",
+      "question": "Do I need an account with the bank to buy a Giftplus card?",
       "correct": [
-        "DOC-01402"
+        "DOC-01282"
       ],
       "got_top3": [
-        "DOC-01414",
-        "DOC-01412",
-        "DOC-01417"
+        "DOC-01274",
+        "DOC-01273",
+        "DOC-01385"
       ],
-      "rank": 17
+      "rank": null
     },
     {
       "id": "Q017",
@@ -207,9 +207,22 @@
       "got_top3": [
         "DOC-01900",
         "DOC-01889",
-        "DOC-01896"
+        "DOC-01897"
       ],
       "rank": 22
+    },
+    {
+      "id": "Q018",
+      "question": "How do I follow the daily NAV of my policy fund?",
+      "correct": [
+        "DOC-02648"
+      ],
+      "got_top3": [
+        "DOC-00462",
+        "DOC-02560",
+        "DOC-02160"
+      ],
+      "rank": null
     },
     {
       "id": "Q019",
@@ -218,11 +231,24 @@
         "DOC-01506"
       ],
       "got_top3": [
-        "DOC-01507",
-        "DOC-01507",
-        "DOC-01493"
+        "DOC-01493",
+        "DOC-01495",
+        "DOC-01491"
       ],
-      "rank": 9
+      "rank": 8
+    },
+    {
+      "id": "Q020",
+      "question": "Where can I use my EasyShop International Debit Card?",
+      "correct": [
+        "DOC-01221"
+      ],
+      "got_top3": [
+        "DOC-01206",
+        "DOC-01213",
+        "DOC-01229"
+      ],
+      "rank": null
     },
     {
       "id": "Q027",
@@ -232,11 +258,91 @@
         "DOC-01923"
       ],
       "got_top3": [
-        "DOC-01863",
         "DOC-01856",
-        "DOC-01867"
+        "DOC-01863",
+        "DOC-00021"
       ],
-      "rank": 8
+      "rank": 6
+    },
+    {
+      "id": "Q029",
+      "question": "What is a balance transfer home loan?",
+      "correct": [
+        "DOC-02241"
+      ],
+      "got_top3": [
+        "DOC-01002",
+        "DOC-00956",
+        "DOC-02245"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q033",
+      "question": "Am I eligible for an education loan to study in India?",
+      "correct": [
+        "DOC-02400"
+      ],
+      "got_top3": [
+        "DOC-02437",
+        "DOC-00319",
+        "DOC-00234"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q044",
+      "question": "What happens if I miss six Dream Deposit instalments in a row?",
+      "correct": [
+        "DOC-01920",
+        "DOC-01922"
+      ],
+      "got_top3": [
+        "DOC-01919",
+        "DOC-01917",
+        "DOC-01918"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q048",
+      "question": "When does my Accidental Protection Plan Hospital Cash policy begin?",
+      "correct": [
+        "DOC-02702"
+      ],
+      "got_top3": [
+        "DOC-02697",
+        "DOC-02692",
+        "DOC-02687"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q049",
+      "question": "What are the foreclosure charges on a Loan Against Rental Receivable?",
+      "correct": [
+        "DOC-02470",
+        "DOC-02489"
+      ],
+      "got_top3": [
+        "DOC-02464",
+        "DOC-02469",
+        "DOC-02468"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q052",
+      "question": "How are home loans for under-construction property paid out?",
+      "correct": [
+        "DOC-02295"
+      ],
+      "got_top3": [
+        "DOC-02235",
+        "DOC-00270",
+        "DOC-02237"
+      ],
+      "rank": null
     },
     {
       "id": "Q055",
@@ -245,11 +351,11 @@
         "DOC-00814"
       ],
       "got_top3": [
-        "DOC-02106",
-        "DOC-01996",
-        "DOC-00789"
+        "DOC-00789",
+        "DOC-00790",
+        "DOC-00455"
       ],
-      "rank": 8
+      "rank": 6
     },
     {
       "id": "Q057",
@@ -258,11 +364,37 @@
         "DOC-00541"
       ],
       "got_top3": [
-        "DOC-01067",
         "DOC-00542",
+        "DOC-02873",
         "DOC-01066"
       ],
-      "rank": 11
+      "rank": 6
+    },
+    {
+      "id": "Q058",
+      "question": "Tell me about government gold bonds that pay interest on top of gold price returns",
+      "correct": [
+        "DOC-00210"
+      ],
+      "got_top3": [
+        "DOC-00467",
+        "DOC-00233",
+        "DOC-00438"
+      ],
+      "rank": null
+    },
+    {
+      "id": "Q059",
+      "question": "Can I put more than the usual 12% of my pay into my provident fund?",
+      "correct": [
+        "DOC-00667"
+      ],
+      "got_top3": [
+        "DOC-00666",
+        "DOC-01864",
+        "DOC-01799"
+      ],
+      "rank": null
     },
     {
       "id": "Q060",
@@ -271,11 +403,11 @@
         "DOC-01440"
       ],
       "got_top3": [
-        "DOC-01442",
+        "DOC-01457",
         "DOC-01445",
-        "DOC-01457"
+        "DOC-01478"
       ],
-      "rank": 9
+      "rank": null
     },
     {
       "id": "Q062",
@@ -284,11 +416,25 @@
         "DOC-00559"
       ],
       "got_top3": [
-        "DOC-02363",
-        "DOC-02381",
+        "DOC-00599",
+        "DOC-02383",
         "DOC-00551"
       ],
-      "rank": 19
+      "rank": null
+    },
+    {
+      "id": "Q070",
+      "question": "What should I do about a void transaction on my Platinum Debit Card?",
+      "correct": [
+        "DOC-01201",
+        "DOC-01204"
+      ],
+      "got_top3": [
+        "DOC-01159",
+        "DOC-01160",
+        "DOC-01092"
+      ],
+      "rank": null
     }
   ],
   "failures_absent_answered": [
@@ -296,15 +442,8 @@
       "id": "Q056",
       "question": "What is my current account balance?",
       "kind": "personal_data",
-      "cos": 0.807,
-      "cov": 1.0
-    },
-    {
-      "id": "Q080",
-      "question": "When will my last transaction reach the beneficiary?",
-      "kind": "personal_data",
-      "cos": 0.733,
-      "cov": 0.5
+      "cos": 0.756,
+      "cov": 0.667
     }
   ]
 }

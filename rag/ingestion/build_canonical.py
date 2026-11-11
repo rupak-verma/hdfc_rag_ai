@@ -27,6 +27,8 @@ def exclude(r, reason): excluded.append({**r._asdict(), "exclusion_reason": reas
 for pos, r in enumerate(src.itertuples(index=False), start=1):
     q, a = clean_title(r.question), clean_text(r.answer)
     if not a or a.lower() == "nan":                       exclude(r, "missing_answer"); continue
+    if r.training_eligibility == "QUARANTINE_UNVERIFIED_CLAIM":
+                                                      exclude(r, "quarantined_unverified_claim"); continue
     if r.training_eligibility == "EXCLUDE_GREETING_OR_SHORT" or len(a) < 20:
                                                           exclude(r, "greeting_or_too_short"); continue
     if DEVANAGARI.search(q + a):                          exclude(r, "non_english_out_of_scope"); continue
